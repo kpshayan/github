@@ -1,12 +1,12 @@
-name: Shell Commands
-
-#on: [push]
-
-jobs:
-  run-shell-command:
+name: First Workflow
+on: workflow_dispatch
+jobs: 
+  firstJob:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "Hello github world"
+      - name: FirstStep
+        run: |
+          echo "helloWorld"
+          echo "bye"
 
           
