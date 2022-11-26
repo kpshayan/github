@@ -8,13 +8,5 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello github world"
-      - name: multiline script
-        run: |
-          node -v
-          npm -v
-      - name: python Shell
-        run: |
-          import math
-          print(math.sqrt(4))
-        shell: python
+
           
